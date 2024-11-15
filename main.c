@@ -1,5 +1,20 @@
 #include <stdio.h>
-#include <stdint.h>
+#include<stdint.h>
+
+
+void Modulus(int32_t x, int32_t y);
+
+int main()
+{ 
+    int32_t x,y,result=0;
+
+    printf("Enter Two Numbers: ");
+    scanf("%d %d",&x,&y);
+    Modulus(x,y);
+
+
+
+
 
 
 int32_t subtraction(int32_t x, int32_t y);
@@ -30,25 +45,36 @@ int main(void)
   Modulus(x,y);
     
 
-    return 0;
+
 }
 
-int32_t sum(int32_t num1,int32_t num2)
+void Modulus(int32_t x, int32_t y)
 {
-    return num1 + num2;
-}
+    int Result;
+
+
+    if (y==0)
+{
+    printf("division by zero is not allowed -__-");
 
 
 }
 
 int32_t subtraction(int32_t x, int32_t y) {
     return x - y;
+
 }
 
-int32_t Divide(int32_t Dividend, int32_t Divisor) {
-    if (Divisor == 0) {
-        return INT32_MIN; 
-    }
-    return (Dividend / Divisor);
+else 
+{
+    Result = x%y;
+    
+    printf("%d",Result);
+    
 }
+
+   
+}
+
+
 
