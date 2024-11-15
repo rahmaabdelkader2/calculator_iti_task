@@ -2,6 +2,7 @@
 #include<stdint.h>
 
 
+
 void Modulus(int32_t x, int32_t y);
 
 int main()
@@ -13,6 +14,17 @@ int main()
     Modulus(x,y);
 
 
+
+
+void Modulus(int32_t x, int32_t y);
+
+int main()
+{ 
+    int32_t x,y,result=0;
+
+    printf("Enter Two Numbers: ");
+    scanf("%d %d",&x,&y);
+    Modulus(x,y);
 
 
 }
@@ -30,8 +42,12 @@ else
 {
     Result = x%y;
     
+
     printf("The Result is %d",Result);
     
 }
-   
+
+    printf("%d",Result);
+}
+
 }
