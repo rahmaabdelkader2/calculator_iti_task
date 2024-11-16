@@ -6,6 +6,7 @@ int32_t Divide(int32_t Dividend, int32_t Divisor);
 int32_t sum(int32_t num1,int32_t num2);
 void Modulus(int32_t x, int32_t y);
 int32_t multi(int32_t x, int32_t y);
+
 int main(void)
 {
     int32_t x = 0, y = 0;
@@ -60,15 +61,15 @@ void Modulus(int32_t x, int32_t y)
     int Result;
 
     if (y==0)
-{
-    printf("division by zero is not allowed -__-");
-}
+    {
+       printf("division by zero is not allowed -__-");
+    }
 
-else 
-{
-    Result = x%y;
+    else 
+    {
+        Result = x%y;
     
-    printf("%d",Result);
+        printf("%d",Result);
     
-}
+    }
 }

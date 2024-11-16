@@ -1,4 +1,3 @@
-#vscode setting
 .vscode
 *.exe
 *.o
@@ -7,7 +6,4 @@
 *.bin
 *.o
 *.out
-
-
-*.json
 *.json
