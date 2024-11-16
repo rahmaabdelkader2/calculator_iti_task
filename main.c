@@ -49,24 +49,15 @@ int32_t Divide(int32_t Dividend, int32_t Divisor) {
     if (Divisor == 0) {
         return INT32_MIN; 
     }
-    return num1 + num2;
-}
-
-int32_t subtraction(int32_t x, int32_t y) {
-    return x - y;
-}
-
-int32_t Divide(int32_t Dividend, int32_t Divisor) {
-    if (Divisor == 0) {
-        return INT32_MIN; 
-    }
     return (Dividend / Divisor);
 }
+
 int32_t multi(int32_t x, int32_t y)
  { 
     int32_t result = x * y;
     return result; 
 }
+
 void Modulus(int32_t x, int32_t y)
 {
     int Result;
