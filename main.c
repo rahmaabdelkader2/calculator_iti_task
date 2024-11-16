@@ -1,30 +1,67 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <limits.h>
 
-int multi(int x, int y) { 
-    return x * y; 
+int32_t subtraction(int32_t x, int32_t y);
+int32_t Divide(int32_t Dividend, int32_t Divisor);
+int32_t sum(int32_t num1,int32_t num2);
+void Modulus(int32_t x, int32_t y);
+
+int main(void)
+{
+    int32_t x = 0, y = 0;
+    int32_t Res = 0;
+
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+    Res = subtraction(x, y); 
+    printf("Subtraction Result: %d\n", Res);
+
+  
+    Res = Divide(x, y);
+    printf("%d / %d = %d\n", x, y, Res);
+    printf("Division Result: %d\n", Res);
+	
+	Res = sum(x,y);
+    printf("SUM = %d\n",Res);
+
+	modulus(x,y);
+    
+
+    return 0;
+}
+
+int32_t sum(int32_t num1,int32_t num2)
+{
+    return num1 + num2;
+}
+
+int32_t subtraction(int32_t x, int32_t y) {
+    return x - y;
 }
 
 int32_t Divide(int32_t Dividend, int32_t Divisor) {
     if (Divisor == 0) {
-        return INT32_MIN;  
+        return INT32_MIN; 
     }
-    return Dividend / Divisor;
+    return (Dividend / Divisor);
 }
 
-int main(void) {
-    int a = 5;
-    int b = 3;
-    int multiplication = multi(a, b);
-    printf("The product of %d * %d is = %d\n", a, b, multiplication);
+void Modulus(int32_t x, int32_t y)
+{
+    int Result;
 
-    int32_t Num1 = 100;
-    int32_t Num2 = 4;
-    int32_t Res = Divide(Num1, Num2);
-    printf("%d / %d = %d\n", Num1, Num2, Res);
+    if (y==0)
+{
+    printf("division by zero is not allowed -__-");
+}
 
-    printf("%d / %d = %d\n", 10, 0, Divide(10, 0));
-
-    return 0;
+else 
+{
+    Result = x%y;
+    
+    printf("%d",Result);
+    
+}
+   
 }

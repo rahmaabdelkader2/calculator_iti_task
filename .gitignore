@@ -5,3 +5,7 @@
 *.bin
 *.o
 *.out
+
+
+*.json
+*.json
