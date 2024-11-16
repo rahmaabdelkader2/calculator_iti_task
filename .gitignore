@@ -1,3 +1,5 @@
+#vscode setting
+.vscode
 *.exe
 *.o
 *.obj
